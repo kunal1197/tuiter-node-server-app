@@ -12,9 +12,10 @@ const defaults = {
   avatarImage: "/tuiter/images/elon_musk.jpeg",
   tuits: "122K",
   stats: {
-    comments: 123,
-    retuits: 432,
-    likes: 2345,
+    comments: 0,
+    retuits: 0,
+    likes: 0,
+    dislikes: 0,
   },
   topic: "Space",
   time: "2h",
@@ -26,12 +27,13 @@ const defaults = {
 
 const createTuit = (req, res) => {
   const newTuit = {
-    ...req.body,
     ...defaults,
+    ...req.body,
     _id: new Date().getTime() + "",
     liked: false,
   };
   tuits.push(newTuit);
+  console.log(newTuit);
   res.json(newTuit);
 };
 

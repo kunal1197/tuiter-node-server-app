@@ -20,7 +20,7 @@ export default [
     time: "2h",
     title: "SpaceX's Mission",
     liked: false,
-    disliked: true,
+    disliked: false,
     replies: 0,
     retuits: 0,
     likes: 2345,
@@ -47,7 +47,7 @@ export default [
     time: "2h",
     title:
       "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
-    liked: true,
+    liked: false,
     disliked: false,
     replies: 123,
     retuits: 432,
